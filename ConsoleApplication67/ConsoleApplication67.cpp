@@ -46,7 +46,7 @@ public:
         year = new_date->tm_year + 1900;
     }
 
-    friend std::ostream& operator<<(std::ostream& os, const Date& d) {
+    friend ostream& operator<<(std::ostream& os, const Date& d) {
         return os << '(' << d.day << '.' << d.month << '.' << d.year << ')';
     }
 };
